@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Form from './components/Form'
+import MenuList from './components/MenuList'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         </h1>
         <p className="sub-title">👋 Welcome! Please start by telling us your name:</p>
         <Form />
+        <MenuList />
       </main>
     </div>
   )
