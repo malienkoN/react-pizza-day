@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Form from "./components/Form";
 import MenuList from "./components/MenuList";
-import Counter from "./components/Counter";
 import TodoList from "./components/TodoList";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
                     👋 Welcome! Please start by telling us your name:
                 </p>
                 <Form />
-                <Counter />
                 <TodoList />
                 <MenuList />
             </main>
