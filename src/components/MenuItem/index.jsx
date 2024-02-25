@@ -1,5 +1,4 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 // components
 import Button from "../Button";
 // styles
@@ -83,16 +82,6 @@ const MenuItem = ({ item }) => {
             </div>
         </li>
     );
-};
-
-MenuItem.propTypes = {
-    item: PropTypes.shape({
-        imageUrl: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-        ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
-        unitPrice: PropTypes.number.isRequired,
-        soldOut: PropTypes.bool.isRequired,
-    }).isRequired,
 };
 
 export default MenuItem;

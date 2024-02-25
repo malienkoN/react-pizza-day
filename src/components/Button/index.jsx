@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 import styles from "./index.module.css";
 
 const Button = (props) => {
@@ -14,13 +12,6 @@ const Button = (props) => {
             {children}
         </button>
     );
-};
-
-Button.propTypes = {
-    type: PropTypes.oneOf(["button", "submit"]),
-    onClick: PropTypes.func,
-    disabled: PropTypes.bool,
-    children: PropTypes.node.isRequired,
 };
 
 export default Button;
