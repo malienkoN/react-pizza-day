@@ -1,3 +1,5 @@
+// components
+import Counter from "../components/Counter";
 import TodoList from "../components/TodoList";
 
 const Home = () => {
@@ -10,6 +12,7 @@ const Home = () => {
                     Straight out of the oven, straight to you.
                 </span>
             </h1>
+            <Counter />
             <TodoList />
         </>
     );

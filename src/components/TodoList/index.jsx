@@ -22,9 +22,8 @@ const TodoList = () => {
         setItems(items.filter((item) => item.id !== itemId));
     };
 
-    const handleEdit = (itemId) => {
-        // change item input state and refresh items array
-    };
+    // change item input state and refresh items array
+    // const handleEdit = (itemId) => {};
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
@@ -63,7 +62,7 @@ const TodoList = () => {
                         </label>
                         <button
                             type="button"
-                            onClick={() => handleEdit(item.id)}
+                            // onClick={() => handleEdit(item.id)}
                         >
                             edit
                         </button>
