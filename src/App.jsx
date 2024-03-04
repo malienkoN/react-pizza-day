@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Menu from "./pages/Menu";
+import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 // components
 import Header from "./components/Header";
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/menu" element={<Menu />} />
+                    <Route path="/cart" element={<Cart />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

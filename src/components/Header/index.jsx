@@ -11,6 +11,7 @@ const Header = () => {
             <nav>
                 <NavLink to="/login">Login</NavLink>
                 <NavLink to="/menu">Menu</NavLink>
+                <NavLink to="/cart">Cart</NavLink>
             </nav>
             <form>
                 <TextInput placeholder="Search for the order #" />

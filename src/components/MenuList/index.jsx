@@ -12,8 +12,8 @@ const MenuList = () => {
             try {
                 const res = await fetch(API_URL);
                 if (!res.ok) throw new Error("Failed to fetch :(");
-                const data = await res.json();
-                setMenuData(data.data);
+                const { data } = await res.json();
+                setMenuData(data);
             } catch (err) {
                 console.error(`${err} :(`);
             }
@@ -23,9 +23,8 @@ const MenuList = () => {
 
     return (
         <ul>
-            {menuData.map((item) => (
-                <MenuItem key={item.id} item={item} />
-            ))}
+            {menuData.length > 0 &&
+                menuData.map((item) => <MenuItem key={item.id} item={item} />)}
         </ul>
     );
 };
